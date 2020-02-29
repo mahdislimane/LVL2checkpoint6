@@ -13,12 +13,12 @@ export default class Student extends Human {
       let skillData = this.Skills;
       let number = 0;
       skillData.forEach(skills => {
-        if (skills == skill) {
+        if (skills === skill) {
           delete this.Skills[skillData.indexOf(skill)];
           number += 1;
         }
       });
-      number == 0 && alert(`${skill} don't exist`);
+      number === 0 && alert(`${skill} don't exist`);
     };
   }
 }
